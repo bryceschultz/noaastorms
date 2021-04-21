@@ -54,7 +54,7 @@ worldmap = clipPolys(wm, xlim=c(20,110),ylim=c(0, 45), keepExtra=TRUE)
 # load storms for North Indian ocean
 spStorms <- getStorms(c('NA', 'SA'))
 
-ggplot(spStorms, aes(x = Longitude, y = Latitude, group = Serial_Num)) + 
+ggplot(spStorms, aes(x = LON, y = LAT, group = SID)) + 
   geom_polygon(data = worldmap, aes(x = X, y = Y, group = PID), 
                fill = "whitesmoke", colour = "gray10", size = 0.2) +
   geom_path(alpha = 0.1, size = 0.8,
