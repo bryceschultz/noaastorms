@@ -45,7 +45,7 @@ install.packages("dplyr")
 ## Usage
 
 ```r
-#install dependencies
+# install dependencies
 install.packages(c("ggplot2","maps","PBSmapping","data.table","mapproj"))
 library(ggplot2)
 library("PBSmapping")
@@ -58,7 +58,7 @@ worldmap = clipPolys(wm, xlim=c(20,110),ylim=c(0, 45), keepExtra=TRUE)
 # load storms
 spStorms <- getStorms(c('NI','SI'))
 
-#generate ggplot
+# generate ggplot
 ggplot(spStorms, aes(x = LON, y = LAT, group = SID)) + 
   geom_polygon(data = worldmap, aes(x = X, y = Y, group = PID), 
                fill = "whitesmoke", colour = "gray10", size = 0.2) +
