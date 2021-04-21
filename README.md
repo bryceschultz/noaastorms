@@ -9,6 +9,8 @@ The National Oceanic and Atmospheric Administration, which releases datasets kno
 ```r
 library(devtools)
 install_github("bryceschultz/noaastorms")
+library(noaastorms)
+install.packages("dplyr")
 ```
 
 ## Available functions
