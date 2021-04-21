@@ -8,7 +8,7 @@ The National Oceanic and Atmospheric Administration, which releases datasets kno
 
 ```r
 library(devtools)
-install_github("basilesimon/noaastorms")
+install_github("bryceschultz/noaastorms")
 ```
 
 ## Available functions
